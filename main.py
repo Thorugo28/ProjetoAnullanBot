@@ -19,6 +19,7 @@ client.add_command(d)
 
 @commands.command()
 async def toque(ctx, url: str, channel):
+<<<<<<< HEAD
     song_there = os.path.isfile("msc.mp3")
     try:
         if song_there:
@@ -44,6 +45,11 @@ async def toque(ctx, url: str, channel):
         if file.endswith(".mp3"):
             os.rename(file, "msc.mp3")
     voice.play(discord.FFmpegPCMAudio("msc.mp3"))
+=======
+    voiceChannel = discord.utils.get(ctx.guild.voice_channels, name=channel)
+    voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
+    await voiceChannel.connect()
+>>>>>>> 673cec5278208d6348ee0961a32eacffdb9c078b
 
 client.add_command(toque)
 
@@ -92,4 +98,8 @@ async def pare(ctx):
 
 client.add_command(pare)
 
+<<<<<<< HEAD
 client.run('OTEwMjk4NTE3OTQyMTkwMTUx.YZQzjw.Y29-CT_oB2cbLq5T6slAVQYFFCw')
+=======
+client.run('OTEwMjk4NTE3OTQyMTkwMTUx.YZQzjw.Hvuk78cntpDzU6JQj1mG8gRXqHw')
+>>>>>>> 673cec5278208d6348ee0961a32eacffdb9c078b
