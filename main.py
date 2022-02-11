@@ -92,4 +92,4 @@ async def pare(ctx):
 
 client.add_command(pare)
 
-client.run('SEU TOKEN')
+client.run('OTEwMjk4NTE3OTQyMTkwMTUx.YZQzjw.Y29-CT_oB2cbLq5T6slAVQYFFCw')
